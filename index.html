@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generative Identity</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+
+    
+  </head>
+
+    <style>
+
+@font-face { font-family: nm; src: url('NeueMachina.otf'); }
+
+body {
+  margin: 0;
+  display: flex;
+color: black;
+  /* This centers our sketch horizontally. */
+  justify-content: center;
+
+  /* This centers our sketch vertically. */
+  align-items: center;
+}
+
+        #input{
+    	margin-top: 25px;
+
+        opacity: 1;
+        font-size: 15px;
+        font-family: nm;
+        margin-bottom: 50px;
+        }
+        #name{
+    	margin-top: 25px;
+
+        opacity: 1;
+        font-size: 15px;
+        font-family: nm;
+        margin-bottom: 10px;
+        }
+
+      </style>
+
+  <body>
+      <div id="input">
+      <input  id="name" style="text-align:center;" type="text" placeholder="enter your first name">
+    <br><br>press enter to generate
+          <br><br>press 1 to save the image
+      </div>
+    </body>
+
+    <script src="sketch2.js"></script>
+
+    <script>function say_hi(){
+
+name = document.getElementById('name').value;
+
+        }
+
+        document.getElementById('name').addEventListener('keyup', function (e) {
+                    if (e.keyCode === 13) {say_hi();}}, false);
+</script>
+
+</html>
