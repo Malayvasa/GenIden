@@ -1,7 +1,7 @@
 //IMPORTING FONT
 var font;
 function preload() {
-    font = loadFont('font.otf');
+    font = loadFont('./fonts/font.otf');
 }
 
 //VARIABLES
