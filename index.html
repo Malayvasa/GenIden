@@ -22,12 +22,19 @@
     </div>
   </body>
 
+  <script>
+    function Say_hi(){name = document.getElementById('name').value;}
+    document.getElementById('name').addEventListener('keyup', function (e) {
+    if (e.keyCode === 13) {Say_hi();}}, false);
+  </script>
+
   <script src="sketch.js"></script>
   <script src="PrimaryShape.js"></script>
-  <script>
-    function say_hi(){name = document.getElementById('name').value;}
-    document.getElementById('name').addEventListener('keyup', function (e) {
-    if (e.keyCode === 13) {say_hi();}}, false);
-  </script>
+  <script src="InnerCircles.js"></script>
+  <script src="ColorTheme.js"></script>
+  <script src="UpperShape.js"></script>
+  <script src="LowerShape.js"></script>
+  <script src="OrbitingCircles.js"></script>
+  <script src="Branding.js"></script>
 
 </html>

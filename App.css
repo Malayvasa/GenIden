@@ -25,7 +25,6 @@ body{
     margin: 0;
     display: flex;
     flex-direction: row;
-    color: black;
     align-items: center;
     justify-items: center;
 }

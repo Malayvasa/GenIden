@@ -1,5 +1,15 @@
 //DISPLAYING PRIMARY SHAPE
-function PrimaryShape(value){
+function PrimaryShape(name){
+
+        strokeWeight(2);
+
+        //OUTER RING
+        stroke(scolor);
+        noFill();
+        ellipse(400,400,500);
+
+        value=name[0].charCodeAt() - 64;
+
     switch(value){
     //START A
     case 1:
