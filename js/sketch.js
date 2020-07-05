@@ -1,7 +1,7 @@
 //IMPORTING FONT
 var font;
 function preload() {
-    font = loadFont('./fonts/font.otf');
+    font = loadFont('./styles/fonts/font.otf');
 }
 
 //VARIABLES
@@ -36,6 +36,9 @@ function draw() {
     //PRIMARY SHAPE
     PrimaryShape(name);
 
+    //ORBITING CIRCLES
+    OrbitingCircles(name);
+
     //INNER CIRCLES
     InnerCircles(name);
 
@@ -44,9 +47,6 @@ function draw() {
 
     //LOWER SHAPE
     LowerShape(name);
-
-    //ORBITING CIRCLES
-    OrbitingCircles(name);
 
     //DISPLAYING NAME
     Branding(name);
