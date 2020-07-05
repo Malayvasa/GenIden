@@ -1,0 +1,37 @@
+@font-face { font-family: nm; src: url('font.otf'); }
+
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+  
+#input{
+    margin-top: 25px;
+    font-size: 15px;
+    font-family: nm;
+    margin-bottom: 50px;
+}
+#name{
+    margin-top: 25px;
+    font-size: 15px;
+    font-family: nm;
+    margin-bottom: 10px;
+}
+
+.workspace{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    color: black;
+    align-items: center;
+    justify-items: center;
+}
+
+#p5{
+    align-self: center;
+    justify-self: center;
+    padding: 50px;
+}

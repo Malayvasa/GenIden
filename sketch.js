@@ -1,7 +1,7 @@
 //IMPORTING FONT
 var NM;
 function preload() {
-  NM = loadFont('NeueMachina.otf');
+  NM = loadFont('font.otf');
 }
 
 //VARIABLES DECLARATION
@@ -63,7 +63,8 @@ var spin=1;
 //SETUP FUNCTION
 function setup() {
     
-  createCanvas(800, 800);
+  var canvas = createCanvas(800, 800);
+  canvas.parent('p5');
   textFont(NM);
   angleMode(DEGREES);
     noCursor();
