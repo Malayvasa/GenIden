@@ -36,9 +36,6 @@ function draw() {
     //PRIMARY SHAPE
     PrimaryShape(name);
 
-    //ORBITING CIRCLES
-    OrbitingCircles(name);
-
     //INNER CIRCLES
     InnerCircles(name);
 
@@ -51,4 +48,7 @@ function draw() {
     //DISPLAYING NAME
     Branding(name);
 
+    //ORBITING CIRCLES
+    OrbitingCircles(name);
+    
 }
