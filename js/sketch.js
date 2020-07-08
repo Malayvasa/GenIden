@@ -36,6 +36,11 @@ function draw() {
     //PRIMARY SHAPE
     PrimaryShape(name);
 
+    //OUTER RING
+    stroke(scolor);
+    noFill();
+    ellipse(400,400,500);
+
     //INNER CIRCLES
     InnerCircles(name);
 
