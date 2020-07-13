@@ -14,6 +14,12 @@ body{
     font-family: nm;
     margin-bottom: 50px;
 }
+
+.input-group{
+    width: 300px;
+    
+}
+
 #name{
     margin-top: 25px;
     font-size: 15px;
@@ -21,16 +27,11 @@ body{
     margin-bottom: 10px;
 }
 
-.workspace{
-    margin: 0;
-    display: flex;
-    flex-direction: row;
+#p5{
     align-items: center;
-    justify-items: center;
 }
 
-#p5{
-    align-self: center;
-    justify-self: center;
-    padding: 50px;
+#p5 canvas {
+    width: 100% !important;
+    height: auto !important;
 }

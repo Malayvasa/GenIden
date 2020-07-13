@@ -5,9 +5,12 @@ var rcircle=20;
 var center = 400;
 var value=0;
 var angle=0;
+var animate =1;
 
 function OrbitingCircles(){
     countVowel=0;
+
+    if (animate == 1){speed =0.024;}else{speed=0;}
 
     //COUNT VOWELS
     for(var i=0;i<name.length;i++){

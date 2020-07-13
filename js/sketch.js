@@ -9,6 +9,7 @@ var name="malay";
         
 //SETUP FUNCTION
 function setup() {
+    pixelDensity(1);
     var canvas = createCanvas(800, 800);
     canvas.parent('p5');
     textFont(font);
