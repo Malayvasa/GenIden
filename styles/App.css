@@ -29,6 +29,7 @@ body{
 
 #p5{
     align-items: center;
+    justify-items: center;
 }
 
 #p5 canvas {
