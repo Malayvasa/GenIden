@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generative Identity</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+    <link rel="stylesheet" href="./styles/App.css">
+    <link rel="icon" type="image/png" href="resource/favicon.png?v=1">
+  </head>
+
+  <body>
+    <div class="workspace">
+      
+      <div id="input">
+        <input  id="name" style="text-align:center;" type="text" placeholder="enter your first name">
+        <br><br>press enter to generate
+        <br><br>press 1 to save the image
+      </div>
+
+      <div id="p5"></div>
+      
+    </div>
+  </body>
+
+  <script>
+    function Say_hi(){name = document.getElementById('name').value;}
+    document.getElementById('name').addEventListener('keyup', function (e) {
+    if (e.keyCode === 13) {Say_hi();}}, false);
+  </script>
+
+  <script src="./js/sketch.js"></script>
+  <script src="./js/PrimaryShape.js"></script>
+  <script src="./js/InnerCircles.js"></script>
+  <script src="./js/ColorTheme.js"></script>
+  <script src="./js/UpperShape.js"></script>
+  <script src="./js/LowerShape.js"></script>
+  <script src="./js/OrbitingCircles.js"></script>
+  <script src="./js/Branding.js"></script>
+
+</html>
