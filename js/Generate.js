@@ -36,9 +36,9 @@ function Generate(){
   })
 
   $('input').focus( function() {
-    $('.sticky-footer').hide();
+    $('#sticky-footer').hide();
 });
 
 $('input').blur( function() {
-    $('.sticky-footer').show();
+    $('#sticky-footer').show();
 });
