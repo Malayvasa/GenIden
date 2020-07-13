@@ -5,7 +5,8 @@ function preload() {
 }
 
 //VARIABLES
-var name="malay";
+var name="swasti";
+var animate=-1;
         
 //SETUP FUNCTION
 function setup() {
@@ -17,16 +18,18 @@ function setup() {
     noCursor();
 }
 
-//EXPORTING PNG     
-function keyTyped() {
-    if (key === '1') {
+//EXPORTING PNG   
+
+document.querySelectorAll(".btn")[2].addEventListener("click", function(){
+    animate = -1;
     var save=name.toLowerCase();
     saveCanvas(save, 'png');
-    }
-}
+    animate = 1;
+  });
 
 //DRAW FUNCTION
 function draw() {
+
 
     //CONVERT NAME TO UPPER CASE
     name=name.toUpperCase();
@@ -55,6 +58,6 @@ function draw() {
     Branding(name);
 
     //ORBITING CIRCLES
-    OrbitingCircles(name);
+    OrbitingCircles(name,animate);
     
 }

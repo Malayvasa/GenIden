@@ -10,12 +10,28 @@
 
   <body>
 
-    <div id="p5"></div>
+    <div class="container-fluid">
+      <div class="row align-items-center justify-items-cente">
 
-  <script>
-    function Generate(){name = document.getElementById('name').value;}
-   
-  </script>
+        <div class="col-lg mr-auto">
+          <div id="p5"></div>
+        </div>
+
+        <div class="col-lg ml-auto ">
+            <div class="input mx-auto justify-content-around">
+              <input type="text" id="name" class="form-control" placeholder="First Name" aria-label="Username" aria-describedby="basic-addon1">
+              <div class="w-100"></div>
+              
+              <button class="btn btn-primary w-100" type="submit">Generate</button>
+              <button class="btn btn-outline-primary w-100 mt-3" type="submit">Toggle Animation</button>
+              <button class="btn btn-outline-primary w-100 mt-1" type="submit">Download</button>
+              
+            </div>
+        </div>
+
+      </div>
+    </div>
+
 
   <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -31,6 +47,16 @@
   <script src="./js/OrbitingCircles.js"></script>
   <script src="./js/Branding.js"></script>
 
+  <script>
+    function Generate(){name = document.getElementById('name').value;}
+    function ToggleAnimate(){animate= -animate;}
+    
+    document.querySelector(".btn").addEventListener("click", Generate);
+    document.querySelectorAll(".btn")[1].addEventListener("click", function(){
+      animate = -animate;
+    });
+
+  </script>
   </body>
 
   </html>
