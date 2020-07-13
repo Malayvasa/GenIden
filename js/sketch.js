@@ -5,7 +5,7 @@ function preload() {
 }
 
 //VARIABLES
-var name="swasti";
+var name="malay";
 var animate=-1;
         
 //SETUP FUNCTION
@@ -21,10 +21,9 @@ function setup() {
 //EXPORTING PNG   
 
 document.querySelectorAll(".btn")[2].addEventListener("click", function(){
-    animate = -1;
+    if(animate == 1){animate = -1;}
     var save=name.toLowerCase();
     saveCanvas(save, 'png');
-    animate = 1;
   });
 
 //DRAW FUNCTION

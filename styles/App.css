@@ -6,10 +6,12 @@ body{
     justify-content: center;
     align-content: center;
     text-align: center;
+    font-family: nm;
+    
 }
   
 #input{
-    margin-top: 25px;
+   
     font-size: 15px;
     font-family: nm;
     margin-bottom: 50px;
@@ -21,18 +23,30 @@ body{
 }
 
 #name{
-    margin-top: 25px;
     font-size: 15px;
-    font-family: nm;
     margin-bottom: 10px;
 }
+
+
 
 #p5{
     align-items: center;
     justify-items: center;
+    max-width: 800px;
 }
 
 #p5 canvas {
     width: 100% !important;
     height: auto !important;
 }
+
+@media only screen and (max-width: 600px) {
+
+    #p5 canvas {
+       margin-top: 10%;
+    }
+
+    .input {
+        margin-top: 20%;
+    }
+  }
