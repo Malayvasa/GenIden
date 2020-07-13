@@ -4,21 +4,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generative Identity</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/App.css">
   </head>
 
   <body>
 
-    <div class="container-fluid">
-      <div class="row align-items-center justify-items-cente">
+    <div class="container-fluid" id="page-content">
+      <div class="row align-items-center justify-items-center">
 
-        <div class="col-lg-8 ">
-          <div id="p5"></div>
+        <div class="col-xl-8 m-auto">
+          <div id="p5" class="m-auto"></div>
         </div>
 
-        <div class="col-lg-4">
-            <div class="input mx-auto">
+        <div class="col-xl-4">
+            <div class="input m-auto">
               <input type="text" id="name" class="form-control" placeholder="First Name" aria-label="Username" aria-describedby="basic-addon1" autocomplete="off">
               <div class="w-100"></div>
               <p id="feedback"></p>
@@ -32,6 +33,17 @@
       </div>
     </div>
 
+    <footer id="sticky-footer bg-light" class="py-4">
+      <div class="container text-center" style="display: inline-block;">
+        <small> &copy; Generative Identity by Malay Vasa</small>
+      </div>
+
+      <div class="social-part" style="display: inline-block;">
+        <a href="https://www.behance.net/malayvasa" class="fa fa-behance" aria-hidden="true"></a>
+        <a class="fa fa-twitter" aria-hidden="true" href="https://www.twitter.com/malayvasa"></a>
+        <a class="fa fa-instagram" aria-hidden="true" href="https://www.instagram.com/malayvasa"></a>
+      </div>
+    </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -46,35 +58,8 @@
   <script src="./js/LowerShape.js"></script>
   <script src="./js/OrbitingCircles.js"></script>
   <script src="./js/Branding.js"></script>
+  <script src="./js/Generate.js"></script>
 
-  <script>
-    function Generate(){ if(document.getElementById('name').value != ""){
-      document.getElementById("feedback").innerHTML = "";
-      name = document.getElementById('name').value;
-      if(name.toLowerCase()=="rick"){
-        window.location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
-      }
-      else if(name.toLowerCase()=="sex"){
-        window.location.replace("https://www.youtube.com/watch?v=6iFbuIpe68k");
-      }
-    } else {
-      document.getElementById("feedback").style.color="red";
-      document.getElementById("feedback").innerHTML = "Invalid Name!";
-    }
-  }
-    function ToggleAnimate(){animate= -animate;}
-    
-    document.querySelector(".btn").addEventListener("click", Generate);
-    document.querySelectorAll(".btn")[1].addEventListener("click", function(){
-      animate = -animate;
-    });
-    document.querySelector("#name").addEventListener("keydown", function(e){
-      if(e.keyCode==13){
-        Generate();
-      }
-    })
-
-  </script>
   </body>
 
   </html>
