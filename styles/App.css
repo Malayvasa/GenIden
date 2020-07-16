@@ -37,7 +37,7 @@ body{
 #p5{
     align-items: center;
     justify-items: center;
-    max-width: 700px; 
+    max-width: 600px; 
     margin-top: 10%;
 }
 
@@ -47,17 +47,17 @@ body{
     margin-top: 10%;
 }
 
+
 #sticky-footer {
     flex-shrink: none;
   }
 
-  footer{
-      display: inline;
+footer{
+    position: absolute;
     background-color: #e0e0e0; 
-    position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
+    left: 0;
+    bottom: 0;
+    width: 100%;
   }
 
   .sticky-footer{

@@ -35,10 +35,4 @@ function Generate(){
     }
   })
 
-  $('input').focus( function() {
-    $('#sticky-footer').hide();
-});
-
-$('input').blur( function() {
-    $('#sticky-footer').show();
-});
+  
