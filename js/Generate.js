@@ -35,4 +35,14 @@ function Generate(){
     }
   })
 
-  
+ 
+
+if ($(window).width() <= 812) {
+  $('input').focus( function() {
+    $('#sticky-footer').hide();
+});
+
+$('input').blur( function() {
+    $('#sticky-footer').show();
+});
+}
