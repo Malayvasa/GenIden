@@ -1,7 +1,0 @@
-node_modules
-test/report
-npm-debug.log
-test/coverage
-.idea
-.tern-port
-.tern-project
