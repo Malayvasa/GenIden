@@ -1,4 +1,4 @@
-@font-face { font-family: nm; src: url('./fonts/font.otf'); }
+
 html{
     height:100%
 }
@@ -7,7 +7,7 @@ body{
     justify-content: center;
     align-content: center;
     text-align: center;
-    font-family: nm;
+    font-family:'Space Mono';
     
 }
 
@@ -18,7 +18,7 @@ body{
 #input{
    
     font-size: 15px;
-    font-family: nm;
+    font-family:'Space Mono';
     margin-bottom: 50px;
 }
 

@@ -1,12 +1,10 @@
 //IMPORTING FONT
 var font;
-function preload() {
-    font = loadFont('./styles/fonts/font.otf');
-}
+
 
 //VARIABLES
 var name="malay";
-var animate=-1;
+var animate= 1;
 var radius = 250;
 var speed =0.024;
 var countVowel;
@@ -20,7 +18,7 @@ function setup() {
     pixelDensity(1);
     var canvas = createCanvas(800, 800);
     canvas.parent('p5');
-    textFont(font);
+    textFont('Space Mono');
     angleMode(DEGREES);
     noCursor();
 }
