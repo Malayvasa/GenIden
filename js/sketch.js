@@ -1,7 +1,3 @@
-//IMPORTING FONT
-var font;
-
-
 //VARIABLES
 var name="malay";
 var animate= 1;
@@ -961,8 +957,8 @@ break;
     textSize(20);
     noStroke();
     fill(scolor);
-    text("@malayvasa", 25, 30, 500);
-    text("generative identity", 570, 30, 500);
+    text("malayvasa", 25, 30, 500);
+    text("generative identity", 560, 30, 500);
     var save=name.toLowerCase();
     text(save,25,770,500);
     text("made in p5.js",630,770,500);
