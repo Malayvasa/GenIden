@@ -1,53 +1,49 @@
 <!DOCTYPE html>
 <html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Generative Identity</title>
-    <link rel="icon" type="image/png" href="resource/favicon.png?v=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/App.css">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generative Identity</title>
+  <link rel="icon" type="image/png" href="resource/favicon.png?v=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/App.css">
+</head>
 
-  <body>
+<body>
 
-    <div class="container-fluid" id="page-content">
-      <div class="row align-items-center justify-items-center">
+<div class="p5">
+  <div id="p5" ></div>
+</div>
 
-        <div class="col-xl-8 m-auto">
-          <div id="p5" class="m-auto"></div>
-        </div>
+<div class="input">
+    
+    <input type="text" id="name" class="form-control" placeholder="First Name" autocomplete="off">
+    <p id="feedback"></p>
+    
+    <button class="btn btn-primary" type="submit">Generate</button>
+    <button class="btn btn-light" type="submit">Toggle Animation</button>
+    <button class="btn btn-light" type="submit"><i class="fa fa-download"></i></button>
+</div>
 
-        <div class="col-xl-4">
-            <div class="input m-auto">
-              <input type="text" id="name" class="form-control" placeholder="First Name" aria-label="Username" aria-describedby="basic-addon1" autocomplete="off">
-              <div class="w-100"></div>
-              <p id="feedback"></p>
-              <button class="btn btn-primary w-100" type="submit">Generate</button>
-              <button class="btn btn-outline-primary w-100 mt-3" type="submit">Toggle Animation</button>
-              <button class="btn btn-outline-primary w-100 mt-1" type="submit">Download</button>
-              
-            </div>
-        </div>
 
-      </div>
+  
+
+  
+
+
+  <!-- <footer id="sticky-footer" class="py-4">
+    <div class="container text-center" style="display: inline-block;">
+      <small>Generative Identity by Malay Vasa</small>
     </div>
 
-    
-
-    <footer id="sticky-footer" class="py-4">
-      <div class="container text-center" style="display: inline-block;">
-        <small>Generative Identity by Malay Vasa</small>
-      </div>
-
-      <div class="social-part" style="display: inline-block;">
-        <a href="https://www.behance.net/malayvasa" class="fa fa-behance" aria-hidden="true"></a>
-        <a class="fa fa-twitter" aria-hidden="true" href="https://www.twitter.com/malayvasa"></a>
-        <a class="fa fa-instagram" aria-hidden="true" href="https://www.instagram.com/malayvasa"></a>
-      </div>
-    </footer>
+    <div class="social-part" style="display: inline-block;">
+      <a href="https://www.behance.net/malayvasa" class="fa fa-behance" aria-hidden="true"></a>
+      <a class="fa fa-twitter" aria-hidden="true" href="https://www.twitter.com/malayvasa"></a>
+      <a class="fa fa-instagram" aria-hidden="true" href="https://www.instagram.com/malayvasa"></a>
+    </div>
+  </footer> -->
 
   <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -58,6 +54,6 @@
   <script src="./js/sketch.js"></script>
   <script src="./js/Generate.js"></script>
 
-  </body>
+</body>
 
-  </html>
+</html>

@@ -1,91 +1,24 @@
-
-html{
-    height:100%
-}
 body{
-    height: 100%;
-    justify-content: center;
-    align-content: center;
+    height: 100vh;
+    font-family:'Space Mono';
+    background-color: #e6e6f0 !important;
     text-align: center;
-    font-family:'Space Mono';
-    
-}
-
-#page-content {
-    flex: 1 0 auto;
-  }
-  
-#input{
-   
-    font-size: 15px;
-    font-family:'Space Mono';
-    margin-bottom: 50px;
+    justify-content: center;
+    padding: 10vh 0;
 }
 
 .input{
-    width: 300px;
-    
+    max-width: 350px;
+    margin: 1% auto;
 }
 
-#name{
-    font-size: 15px;
-    margin-bottom: 10px;
+.p5{
+    margin: 1% auto;
 }
 
-
-
-#p5{
-    align-items: center;
-    justify-items: center;
-    max-width: 600px; 
-    margin-top: 10%;
-}
-
-#p5 canvas {
+#p5 canvas{
     width: 100% !important;
     height: auto !important;
-    margin-top: 10%;
+    max-width: 500px;
+    border-radius: 12px;
 }
-
-
-#sticky-footer {
-    flex-shrink: none;
-  }
-
-footer{
-    position: absolute;
-    background-color: #e0e0e0; 
-    left: 0;
-    bottom: 0;
-    width: 100%;
-  }
-
-  .sticky-footer{
-      display: inline-block;
-  }
-
-  .social-part .fa{
-    padding-right:20px;
-}
-
-@media only screen and (max-width: 1200px) {
-
-    .input {
-        margin-top: 10%;
-    }
-
-    footer{
-        background-color:#e0e0e0;
-        color: #101010;
-        font-size: 15px;
-        margin-top: 10%;
-    }
-
-    #p5{
-        margin-top: 10%;
-    }
-
-    .social-part{
-        margin-top: 10px;
-    }
-  }

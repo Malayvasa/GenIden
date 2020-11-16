@@ -13,22 +13,9 @@ function Generate(){
 function ToggleAnimate(){animate= -animate;}
 
 document.querySelector(".btn").addEventListener("click", Generate);
-document.querySelectorAll(".btn")[1].addEventListener("click", function(){
-  animate = -animate;
-});
-
+document.querySelectorAll(".btn")[1].addEventListener("click", ToggleAnimate);
 document.querySelector("#name").addEventListener("keydown", function(e){
   if(e.keyCode==13){
     Generate();
   }
 })
-
-if ($(window).width() <= 812) {
-  $('input').focus( function() {
-    $('#sticky-footer').hide();
-});
-
-$('input').blur( function() {
-    $('#sticky-footer').show();
-});
-}

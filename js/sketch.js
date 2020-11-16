@@ -958,10 +958,10 @@ break;
     noStroke();
     fill(scolor);
     text("malayvasa", 25, 30, 500);
-    text("generative identity", 560, 30, 500);
+    text("generative identity", 540, 30, 500);
     var save=name.toLowerCase();
-    text(save,25,770,500);
-    text("made in p5.js",630,770,500);
+    text(save,25,750,500);
+    text("made in p5.js",620,750,500);
 
     //ORBITING CIRCLES
     countVowel=0;
